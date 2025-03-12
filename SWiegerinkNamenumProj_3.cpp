@@ -11,14 +11,12 @@ using namespace std;
 
 int main()
 {
+    // open files for input and output
     ifstream fin ("namenum.in");
     ofstream fout ("namenum.out");
     ifstream fin2 ("dict.txt");
 
+    // initialize and declare variables
     int inputNumb;
-    string stupidVar;
-    fin >> inputNumb;
-    fin2 >> stupidVar;
 
-    fout << inputNumb << stupidVar << endl;
 }
