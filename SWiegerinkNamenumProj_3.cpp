@@ -15,7 +15,8 @@ int main()
     ofstream fout ("namenum.out");
     ifstream fin2 ("dict.txt");
 
-    int inputNumb, stupidVar;
+    int inputNumb;
+    string stupidVar;
     fin >> inputNumb;
     fin2 >> stupidVar;
 
