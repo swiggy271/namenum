@@ -19,5 +19,5 @@ int main()
     fin >> inputNumb;
     fin2 >> stupidVar;
 
-    fout << inputNumb << stupidvar << endl;
+    fout << inputNumb << stupidVar << endl;
 }
