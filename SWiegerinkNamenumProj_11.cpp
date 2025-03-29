@@ -30,7 +30,7 @@ int main()
     {
         for(int q = 0; q < to_string(inputNumb).length(); q++)
         {
-            word[q] = TTT[int(to_string(inputNumb) - '0' [q])][j % int(pow(q, 3))];
+            word[q] = TTT[int(to_string(inputNumb)[q]) - '0'][j % int(pow(q, 3))];
             cout << word[q];
         }
         cout << endl;
