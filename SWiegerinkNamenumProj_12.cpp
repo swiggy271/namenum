@@ -24,7 +24,7 @@ int main()
     // initialize and declare variables
     int inputNumb;
     fin >> inputNumb;
-    char TTT[11][3] = {{}, {}, {'A', 'B', 'C'}, {'D', 'E', 'F'}, {'G', 'H', 'I'}, {'J', 'K', 'L'}, {'M', 'N', 'O'}, {'P', 'R', 'S'}, {'T', 'U', 'V'}, {'W', 'X', 'Y'}};
+    char TTT[11][3] = {{''}, {''}, {'A', 'B', 'C'}, {'D', 'E', 'F'}, {'G', 'H', 'I'}, {'J', 'K', 'L'}, {'M', 'N', 'O'}, {'P', 'R', 'S'}, {'T', 'U', 'V'}, {'W', 'X', 'Y'}};
     vector <char> word(inputNumb);
     for(int j = 0; pow(to_string(inputNumb).length(), 3); j++)
     {
