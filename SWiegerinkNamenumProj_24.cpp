@@ -11,6 +11,7 @@ using namespace std;
 #include <string>
 #include <vector>
 #include <cmath>
+#include <algorithm>
 
 int main()
 {
@@ -21,18 +22,33 @@ int main()
 
     // initialize and declare variables
     int inputNumb;
+    string wordChecking;
     fin >> inputNumb;
     char TTT[11][3] = {{'\0'}, {'\0'}, {'A', 'B', 'C'}, {'D', 'E', 'F'}, {'G', 'H', 'I'}, {'J', 'K', 'L'}, {'M', 'N', 'O'}, {'P', 'R', 'S'}, {'T', 'U', 'V'}, {'W', 'X', 'Y'}};
     vector <char> word(to_string(inputNumb).length());
+    vector <string> wordList(pow(to_string(inputNumb).length(), 3));
     for(int j = 0; j < pow(to_string(inputNumb).length(), 3); j++)
     {
         for(int q = 0; q < to_string(inputNumb).length(); q++)
         {
             // word[q] = TTT[int(to_string(inputNumb)[q]) - '0'][j % int(pow(q, 3))];
             word[q] = TTT[int(to_string(inputNumb)[q]) - '0'][(j % int(pow(3, q))) % 3];
-            cout << word[q];
+            wordList[j][q] = word[q];
         }
-        cout << endl;
     }
+
+    sort(wordList, wordList[pow(to_string(inputNumb).length(), 3)]);
     
+    for(int j = 0; j < pow(to_string(inputNumb).length(), 3); j++)
+    {
+        for(int i = 0; i < 4617; i++)
+        {
+            fin2 >> wordChecking;
+            if(wordChecking == wordList[j])
+            {
+                fout << wordList[j];
+            }
+        }
+        // close and open???
+    }
 }
