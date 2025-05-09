@@ -36,8 +36,8 @@ int main()
             wordList[j][q] = word[q];
         }
     }
-    /*
-    sort(wordList, wordList[pow(to_string(inputNumb).length(), 3)]);
+    
+    // sort(wordList, wordList[pow(to_string(inputNumb).length(), 3)]);
     
     for(int j = 0; j < pow(to_string(inputNumb).length(), 3); j++)
     {
@@ -51,5 +51,5 @@ int main()
         }
         // close and open???
     }
-    */
+    
 }
