@@ -49,7 +49,7 @@ int main()
                 fout << wordList[j];
             }
         }
-        // close and open???
+        fin2.seekg(ios::beg);
     }
     
 }
