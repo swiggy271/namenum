@@ -37,7 +37,7 @@ int main()
         }
     }
 
-    for(int j = 0; j < pow(to_string(inputNumb).length(), 3); j++
+    for(int j = 0; j < pow(to_string(inputNumb).length(), 3); j++)
     {
         cout << wordList[j];
     }
