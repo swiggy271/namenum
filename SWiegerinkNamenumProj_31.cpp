@@ -53,7 +53,7 @@ int main()
                 fout << wordList[j] << endl;
             }
         }
-        fin2.clear()
+        fin2.clear();
         fin2.seekg(ios::beg);
     }
     
