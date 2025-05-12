@@ -42,7 +42,8 @@ int main()
         cout << wordList[j];
     }
     // sort(wordList, wordList[pow(to_string(inputNumb).length(), 3)]);
-    
+
+    /*
     for(int j = 0; j < pow(to_string(inputNumb).length(), 3); j++)
     {
         for(int i = 0; i < 4617; i++)
@@ -56,5 +57,5 @@ int main()
         fin2.clear();
         fin2.seekg(ios::beg);
     }
-    
+    */
 }
