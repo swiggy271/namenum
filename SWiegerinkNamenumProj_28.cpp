@@ -33,7 +33,7 @@ int main()
         {
             // word[q] = TTT[int(to_string(inputNumb)[q]) - '0'][j % int(pow(q, 3))];
             word[q] = TTT[int(to_string(inputNumb)[q]) - '0'][(j % int(pow(3, q))) % 3];
-            wordList[j][q] = word[q];
+            wordList[q][j] = word[q];
         }
     }
     
