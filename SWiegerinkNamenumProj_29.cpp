@@ -36,7 +36,11 @@ int main()
             wordList[q][j] = word[q];
         }
     }
-    
+
+    for(int j = 0; j < pow(to_string(inputNumb).length(), 3); j++
+    {
+        cout << wordList[j];
+    }
     // sort(wordList, wordList[pow(to_string(inputNumb).length(), 3)]);
     
     for(int j = 0; j < pow(to_string(inputNumb).length(), 3); j++)
@@ -46,9 +50,10 @@ int main()
             fin2 >> wordChecking;
             if(wordChecking == wordList[j])
             {
-                fout << wordList[j];
+                fout << wordList[j] << endl;
             }
         }
+        fin2.clear()
         fin2.seekg(ios::beg);
     }
     
