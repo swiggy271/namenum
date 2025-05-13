@@ -26,7 +26,7 @@ int main()
     fin >> inputNumb;
     char TTT[11][3] = {{'\0'}, {'\0'}, {'A', 'B', 'C'}, {'D', 'E', 'F'}, {'G', 'H', 'I'}, {'J', 'K', 'L'}, {'M', 'N', 'O'}, {'P', 'R', 'S'}, {'T', 'U', 'V'}, {'W', 'X', 'Y'}};
     vector <char> word(to_string(inputNumb).length());
-    vector <string> wordList(pow(to_string(inputNumb).length(), 3));
+    vector <char> wordList(pow(to_string(inputNumb).length(), 3))(to_string(inputNumb.length()));
     for(int j = 0; j < pow(to_string(inputNumb).length(), 3); j++)
     {
         for(int q = 0; q < to_string(inputNumb).length(); q++)
@@ -39,7 +39,11 @@ int main()
 
     for(int j = 0; j < pow(to_string(inputNumb).length(), 3); j++)
     {
-        cout << wordList[j];
+        for(int i = 0; i < to_string(inputNumb.length()); i++)
+        {
+            fout << wordlist[j][i];
+        }
+        fout << endl;
     }
     // sort(wordList, wordList[pow(to_string(inputNumb).length(), 3)]);
 
