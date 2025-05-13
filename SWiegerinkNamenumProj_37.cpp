@@ -1,4 +1,4 @@
-e/*
+/*
 ID: stwiege1
 TASK: namenum
 LANG: C++
