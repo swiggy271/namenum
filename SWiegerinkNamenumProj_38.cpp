@@ -32,8 +32,7 @@ int main()
         for(int q = 0; q < to_string(inputNumb).length(); q++)
         {
             // word[q] = TTT[int(to_string(inputNumb)[q]) - '0'][j % int(pow(q, 3))];
-            word[q] = TTT[int(to_string(inputNumb)[q]) - '0'][(j % int(pow(3, q))) % 3];
-            wordList[q][j] = word[q];
+           wordList[q][j] = TTT[int(to_string(inputNumb)[q]) - '0'][(j % int(pow(3, q))) % 3];
         }
     }
 
