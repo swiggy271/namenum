@@ -76,7 +76,7 @@ string arrToStr(vector<char> p(), int r)
     string a = "\0";
     for(int j = 0; j < r; j++)
     {
-        a.append(p[j]);    
+        a += p[j];    
     }
     return a;
 }
