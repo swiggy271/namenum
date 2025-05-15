@@ -13,7 +13,7 @@ using namespace std;
 #include <cmath>
 #include <algorithm>
 
-string arrToStr(char p[], int r);
+string arrToStr(vector<char> p(), int r);
 
 int main()
 {
@@ -71,7 +71,7 @@ int main()
     }
 }
 
-string arrToStr(char p[], int r)
+string arrToStr(vector<char> p(), int r)
 {
     string a = "\0";
     for(int j = 0; j < r; j++)
