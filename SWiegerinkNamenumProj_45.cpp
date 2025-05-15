@@ -25,7 +25,7 @@ int main()
     // initialize and declare variables
     int inputNumb;
     fin >> inputNumb;
-    string wordChecking, endList[int(pow(to_string(inputNumb).length(),3)];
+    string wordChecking, endList[int(pow(to_string(inputNumb).length(),3))];
     char TTT[11][3] = {{'\0'}, {'\0'}, {'A', 'B', 'C'}, {'D', 'E', 'F'}, {'G', 'H', 'I'}, {'J', 'K', 'L'}, {'M', 'N', 'O'}, {'P', 'R', 'S'}, {'T', 'U', 'V'}, {'W', 'X', 'Y'}};
     vector <char> word(to_string(inputNumb).length());
     // vector <char> wordList((pow(to_string(inputNumb).length(), 3), (to_string(inputNumb).length())));
