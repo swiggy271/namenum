@@ -13,6 +13,8 @@ using namespace std;
 #include <cmath>
 #include <algorithm>
 
+string arrToStr(char p[], int r);
+
 int main()
 {
     // open files for input and output
@@ -22,8 +24,8 @@ int main()
 
     // initialize and declare variables
     int inputNumb;
-    string wordChecking;
     fin >> inputNumb;
+    string wordChecking, endList[int(pow(to_string(inputNumb).length(),3)];
     char TTT[11][3] = {{'\0'}, {'\0'}, {'A', 'B', 'C'}, {'D', 'E', 'F'}, {'G', 'H', 'I'}, {'J', 'K', 'L'}, {'M', 'N', 'O'}, {'P', 'R', 'S'}, {'T', 'U', 'V'}, {'W', 'X', 'Y'}};
     vector <char> word(to_string(inputNumb).length());
     // vector <char> wordList((pow(to_string(inputNumb).length(), 3), (to_string(inputNumb).length())));
@@ -36,7 +38,8 @@ int main()
            wordList[j][q] = TTT[int(to_string(inputNumb)[q]) - '0'][(j / int(pow(3, q))) % 3];
         }
     }
-
+    
+    /*
     for(int j = 0; j < pow(to_string(inputNumb).length(), 3); j++)
     {
         for(int i = 0; i < to_string(inputNumb).length(); i++)
@@ -46,20 +49,34 @@ int main()
         fout << endl;
     }
     // sort(wordList, wordList[pow(to_string(inputNumb).length(), 3)]);
+    */
 
-    /*
+    for(int j = 0; j < pow(to_string(inputNumb).length(), 3); j++)
+    {
+        endList[j] = arrToStr(wordList[j], to_string(inputNumb).length());
+    }
+    
     for(int j = 0; j < pow(to_string(inputNumb).length(), 3); j++)
     {
         for(int i = 0; i < 4617; i++)
         {
             fin2 >> wordChecking;
-            if(wordChecking == wordList[j])
+            if(endList[j] == wordChecking)
             {
-                fout << wordList[j] << endl;
+                fout << endList[j] << endl;
             }
         }
         fin2.clear();
         fin2.seekg(ios::beg);
     }
-    */
+}
+
+string arrToStr(char p[], int r)
+{
+    string a = "\0";
+    for(int j = 0; j < r; j++)
+    {
+        a += p[j];    
+    }
+    return a;
 }
